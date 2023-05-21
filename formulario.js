@@ -18,9 +18,9 @@ function validarFormulario() {
   }
 
  // Validar formato de número de teléfono (10 o más dígitos)
-var telefonoRegex = /^\d{10,}$/; // Ejemplo: 1234567890 (al menos 10 dígitos)
+var telefonoRegex = /^\d{8,}$/; // Ejemplo: 1234567890 (al menos 10 dígitos)
 if (!telefono.match(telefonoRegex)) {
-  alert('Ingrese un número de teléfono válido (al menos 10 dígitos).');
+  alert('Ingrese un número de teléfono válido (al menos 8 dígitos sin contar el codigo de area).');
   return false; // Evita que el formulario se envíe
 }
 
