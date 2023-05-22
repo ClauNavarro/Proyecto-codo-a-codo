@@ -1,0 +1,30 @@
+/* Estilos generales */
+body {
+    font-family: 'Dancing Script', cursive; 
+  
+
+}
+
+/* chiquito*/
+@media (max-width: 576px) {
+
+  body {
+    background-color: lightblue;
+  }
+}
+
+/* mediano */
+@media (min-width: 577px) and (max-width: 992px) {
+  
+  body {
+    background-color: lightgreen;
+  }
+}
+
+/* grande */
+@media (min-width: 993px) {
+ 
+  body {
+    background-color: #7d2181;
+  }
+}
