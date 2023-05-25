@@ -1,18 +1,17 @@
-var carouselItems = document.querySelectorAll('.carousel-item');
-    var carouselButtons = document.querySelectorAll('.carousel-controls button');
+function selectSlide(index, containerId) {
+  const carouselItems = document.querySelectorAll(`#${containerId} .carousel-item`);
+  const carouselControls = document.querySelectorAll(`#${containerId} .carousel-controls button`);
 
-    function selectSlide(index) {
-    carouselItems.forEach(function(item) {
-        item.classList.remove('active');
-    });
-
-    carouselButtons.forEach(function(button) {
-        button.classList.remove('active');
-    });
-
-    carouselItems[index].classList.add('active');
-    carouselButtons[index].classList.add('active');
-    }
+  carouselItems.forEach((item, i) => {
+      if (i === index) {
+          item.classList.add('active');
+          carouselControls[i].classList.add('active');
+      } else {
+          item.classList.remove('active');
+          carouselControls[i].classList.remove('active');
+      }
+  });
+}
 
 
     // La parte del formulario
@@ -47,3 +46,26 @@ var carouselItems = document.querySelectorAll('.carousel-item');
     
         return true; // Permite el envío del formulario si pasa todas las validaciones
     }
+
+
+    //La parte de la API//
+    function fetchData() {
+      fetch('https://jsonplaceholder.typicode.com/users')
+        .then(response => response.json())
+        .then(data => {
+          const resultsList = document.getElementById('results-list');
+          resultsList.innerHTML = '';
+    
+          data.forEach(user => {
+            const listItem = document.createElement('li');
+            listItem.textContent = `${user.name} - ${user.email}`;
+            resultsList.appendChild(listItem);
+          });
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+    }
+    
+    const fetchButton = document.getElementById('fetch-button');
+    fetchButton.addEventListener('click', fetchData);

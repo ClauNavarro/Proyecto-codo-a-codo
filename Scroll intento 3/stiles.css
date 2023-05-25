@@ -1,15 +1,20 @@
 body {
+    padding: 10vh, #dce008c7;
     height: 100vh;
     display: grid;
     place-items: center;
-    background-color: rgba(68, 11, 161, 0.37);
-    margin: 0rem;
+    background-color: rgba(39, 88, 134, 0.589);
 }
 .navbar {
+    width: 100%;
+    border-bottom: 0.15em solid aquamarine;
+    border-top: 0.15em solid aquamarine;
+    border-left: 0.15em solid aquamarine;
+    border-right: 0.15em solid aquamarine;
     border-radius: 1rem;
     font-weight: bolder;
-    background-color: #0511c062;
-    padding: 10px;
+    background-color: #7c32c24b;
+    padding: 1.3em;
 }
 
 .navbar ul {
@@ -25,16 +30,32 @@ body {
 
 .navbar li a {
     text-decoration: none;
-    color: #380375;
+    color: #75036f;
     padding: 5px;
 }
 
-.navbar li a:hover {
-    color: #770404;
+.container {
+    display: flex;
+}
+
+.columna {
+    flex: 1;
+    padding: 10px;
+}
+
+.columna-central {
+    flex: 4;
 }
 
 
+
+
 .carousel {
+    border-radius: 1em;
+    border-bottom: 0.15em dotted aquamarine;
+    border-top: 0.15em dotted aquamarine;
+    border-left: 0.15em dotted aquamarine;
+    border-right: 0.15em dotted aquamarine;
     width: 500px;
     height: 300px;
     position: relative;
@@ -52,7 +73,7 @@ body {
 .carousel-item {
     position: absolute;
     top: 0;
-    border-radius: 1em;
+    border-radius: 3em;
     justify-content: center;
     align-items: flex;
     width: 100%;
@@ -75,9 +96,10 @@ body {
     bottom: 20px;
     left: 20px;
     color: white;
-    font-size: 20px;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+    font-family: 'Italianno', cursive;
+    font-weight: lighter;
+    text-shadow: 2px 2px 4px rgba(190, 11, 206, 0.507);
 }
 
 .carousel-controls {
@@ -85,7 +107,18 @@ body {
 }
 
 .carousel-controls button {
+    justify-content: center;
+    background-color: rgba(221, 78, 240, 0.247);
+    border-radius: 0.7em;
     margin-right: 5px;
+}
+.container4 {
+    padding: 1em;
+    border-radius: 1em;
+    border-bottom: 0.3em solid rgba(214, 18, 204, 0.596);
+    border-top: 0.3em solid rgba(214, 18, 204, 0.596);
+    border-left: 0.3em solid rgba(214, 18, 204, 0.596);
+    border-right: 0.3em solid rgba(214, 18, 204, 0.596);
 }
 
 
@@ -93,6 +126,7 @@ h1{
     text-align: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+
 
 
 /*parte del formulario*/
@@ -120,13 +154,13 @@ input[type="tel"],
 textarea {
     width: 100%;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 0.3em solid #ebc2ecd5;
     border-radius: 4px;
 }
 
 button[type="submit"] {
-    background-color: #555;
-    color: #fff;
+    background-color: #af51e686;
+    color: #030303;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
@@ -134,5 +168,14 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #333;
+    background-color: #bd2121cb;
+}
+
+#fetch-button {
+    background-color: #c40404; /* Cambia el color de fondo */
+    color: #fffffff1; /* Cambia el color del texto */
+    padding: 0.75em; /* Cambia el espaciado interno */
+    border: solid rgb(198, 241, 8); /* Elimina el borde */
+    border-radius: 1em; /* Agrega esquinas redondeadas */
+    font-size: 16px; /* Cambia el tamaño de fuente */
 }
