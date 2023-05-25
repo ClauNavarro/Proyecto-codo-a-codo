@@ -1,3 +1,9 @@
+window.addEventListener('DOMContentLoaded', function() {
+  var animatedText = document.getElementById('animated-text');
+  animatedText.classList.add('animate__animated', 'animate__fadeIn');
+});
+
+
 function selectSlide(index, containerId) {
   const carouselItems = document.querySelectorAll(`#${containerId} .carousel-item`);
   const carouselControls = document.querySelectorAll(`#${containerId} .carousel-controls button`);

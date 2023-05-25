@@ -3,18 +3,20 @@ body {
     height: 100vh;
     display: grid;
     place-items: center;
-    background-color: rgba(39, 88, 134, 0.589);
+    background-color: rgba(29, 83, 134, 0.432);
 }
 .navbar {
     width: 100%;
-    border-bottom: 0.15em solid aquamarine;
-    border-top: 0.15em solid aquamarine;
-    border-left: 0.15em solid aquamarine;
-    border-right: 0.15em solid aquamarine;
-    border-radius: 1rem;
+    border-bottom: 0.15em solid rgba(18, 64, 214, 0.596);
+    border-top: 0.15em solid rgba(18, 64, 214, 0.596);
+    border-left: 0.15em solid rgba(18, 64, 214, 0.596);
+    border-right: 0.15em solid rgba(18, 64, 214, 0.596);
+    border-radius: 1em;
+    font-size: 1.55em;
+    justify-content: space-evenly;
     font-weight: bolder;
-    background-color: #7c32c24b;
-    padding: 1.3em;
+    background-color: rgba(131, 30, 226, 0.075);
+    padding: 1em;
 }
 
 .navbar ul {
@@ -30,7 +32,7 @@ body {
 
 .navbar li a {
     text-decoration: none;
-    color: #75036f;
+    color: rgb(7, 63, 248);
     padding: 5px;
 }
 
@@ -43,7 +45,7 @@ body {
     padding: 10px;
 }
 
-.columna-central {
+.columna columna-central{
     flex: 4;
 }
 
@@ -93,13 +95,13 @@ body {
 
 .carousel-caption {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: white;
+    bottom: 1em;
+    left: 2em;
+    color: rgba(12, 0, 0, 0.829);
     font-size: 30px;
     font-family: 'Italianno', cursive;
     font-weight: lighter;
-    text-shadow: 2px 2px 4px rgba(190, 11, 206, 0.507);
+    text-shadow: 2px 2px 4px rgba(248, 7, 236, 0.856);
 }
 
 .carousel-controls {
@@ -112,24 +114,57 @@ body {
     border-radius: 0.7em;
     margin-right: 5px;
 }
-.container4 {
+
+.container{
+    justify-content: space-between;
+    
+}
+
+.container1, .container2, .container3 {
     padding: 1em;
+    border-radius: 1em;
+    border-bottom: 0.3em solid rgba(18, 64, 214, 0.596);
+    border-top: 0.3em solid rgba(18, 64, 214, 0.596);
+    border-left: 0.3em solid rgba(18, 64, 214, 0.596);
+    border-right: 0.3em solid rgba(18, 64, 214, 0.596);
+}
+.container4 {
+    justify-content: initial;
+    padding-left: 5em;
+    padding-right: 5em;
     border-radius: 1em;
     border-bottom: 0.3em solid rgba(214, 18, 204, 0.596);
     border-top: 0.3em solid rgba(214, 18, 204, 0.596);
     border-left: 0.3em solid rgba(214, 18, 204, 0.596);
     border-right: 0.3em solid rgba(214, 18, 204, 0.596);
 }
+section{ 
+    display: grid;
+    place-items: center;
+    align-items: center;
+}
 
 
 h1{
     text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(5, 5, 248);
+    font-size: 8em;
+    font-family: 'Italianno', cursive; 
+}
+h2{
+    background-color: rgba(131, 30, 226, 0.075);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color:rgb(7, 63, 248);
+    font-weight: lighter;
+    font-size: 2.5em;
+    border-radius: 1em;
+    padding: 0.5em;
 }
 
 
 
-/*parte del formulario*/
+/*La parte del formulario*/
 .titulo{
     text-align: center;
 }
@@ -172,10 +207,10 @@ button[type="submit"]:hover {
 }
 
 #fetch-button {
-    background-color: #c40404; /* Cambia el color de fondo */
-    color: #fffffff1; /* Cambia el color del texto */
-    padding: 0.75em; /* Cambia el espaciado interno */
-    border: solid rgb(198, 241, 8); /* Elimina el borde */
-    border-radius: 1em; /* Agrega esquinas redondeadas */
-    font-size: 16px; /* Cambia el tamaño de fuente */
+    background-color: #c40404;
+    color: #fffffff1;  
+    padding: 0.3em;
+    border: solid rgb(198, 241, 8);
+    border-radius: 1em;
+    font-size: 16px;
 }
